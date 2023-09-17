@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+ }
+.wrapper {
+    max-width: 50%;
+}
+ .slider {
+    max-width: 800px;
+    overflow: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%
+    transform:(-50%, -50%);
+ }
+ .navigation {
+    display: flex;
+ }
+ 
+ .bar {
+    width: 3vh;
+    height: 3vh;
+    margin: 2vh;
+    background-color: black;
+ }
+ 
+ 
+ input[name="meme"] {
+    visibility: hidden;
+ }
+ 
+ .slides {
+    width: 400%;
+    display: flex;
+ }
+ 
+ .slide {
+    width: 25%;
+    transition: all 0.7s ease;
+ }
+ 
+ .img {
+    width: 50%;
+ }
+ 
+ #meme1:checked ~ .first_slide {
+    margin-left: 0;
+ }
+ 
+ #meme2:checked ~ .first_slide {
+    margin-left: -25%;
+ }
+ 
+ #meme3:checked ~ .first_slide {
+    margin-left: -50%;
+ }
+ 
+ #meme4:checked ~ .first_slide {
+    margin-left: -75%;
+ }

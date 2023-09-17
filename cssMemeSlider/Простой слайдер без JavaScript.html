@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5500/cssMemeSlider/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой слайдер без JavaScript</title>
+    
+<style>body.shimeji-pinned iframe {
+      pointer-events: none;
+    }
+    body.shimeji-select-ie {
+      cursor: cell !important;
+    }
+    #shimeji-contextMenu::-webkit-scrollbar {
+      width: 6px;
+    }
+    #shimeji-contextMenu::-webkit-scrollbar-thumb {
+      background-color: rgba(30,30,30,0.6);
+      border-radius: 3px;
+    }
+    #shimeji-contextMenu::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }</style><meta name="shimejiBrowserExtensionId" content="gohjpllcolmccldfdggmamodembldgpc" data-version="2.0.3"><link rel="stylesheet" href="./Простой слайдер без JavaScript_files/style.css"></head>
+<body style="">
+    <div class="slider">
+        <div class="slides">
+           <input type="radio" name="meme" id="meme1" checked="">
+           <input type="radio" name="meme" id="meme2">
+           <input type="radio" name="meme" id="meme3">
+           <input type="radio" name="meme" id="meme4">
+           <div class="menu_wrapper"></div>
+           <div class="slide first_slide">
+              <img src="./Простой слайдер без JavaScript_files/meme1.webp" alt="" class="img">
+              <div class="caption">Текст для первой картинки</div>
+           </div>
+           <div class="slide">
+              <img src="./Простой слайдер без JavaScript_files/meme2.jpeg" alt="" class="img">
+              <div class="caption">Текст для первой картинки</div>
+           </div>
+           <div class="slide">
+              <img src="./Простой слайдер без JavaScript_files/meme3.jpeg" alt="" class="img">
+              <div class="caption">Текст для первой картинки</div>
+           </div>
+           <div class="slide">
+              <img src="./Простой слайдер без JavaScript_files/meme4.jpeg" alt="" class="img">
+              <div class="caption">Текст для первой картинки</div>
+           </div>
+        </div>
+        <div class="navigation">
+            <label for="meme1" class="bar"></label>
+            <label for="meme2" class="bar"></label>
+            <label for="meme3" class="bar"></label>
+            <label for="meme4" class="bar"></label>
+         </div>
+     </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<div id="shimeji-workArea" style="position: fixed; background: transparent; z-index: 2147483643; width: 100vw; height: 100vh; left: 0px; top: 0px; transform: translate(0px, 0px); pointer-events: none;"></div></body></html>

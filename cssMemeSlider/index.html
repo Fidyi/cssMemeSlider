@@ -2,7 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой слайдер без JavaScript</title>
+    <link rel="stylesheet" href="/cssMemeSlider/style.css">
 </head>
 <body>
+    <div class="slider">
+        <div class="slides">
+           <input type="radio" name="meme" id="meme1" checked>
+           <input type="radio" name="meme" id="meme2">
+           <input type="radio" name="meme" id="meme3">
+           <input type="radio" name="meme" id="meme4">
+           <div class="menu_wrapper"></div>
+           <div class="slide first_slide">
+              <img src="/cssMemeSlider/meme1.webp" alt="" class="img">
+           </div>
+           <div class="slide">
+              <img src="/cssMemeSlider/meme2.jpeg" alt="" class="img">
+           </div>
+           <div class="slide">
+              <img src="/cssMemeSlider/meme3.jpeg" alt="" class="img">
+           </div>
+           <div class="slide">
+              <img src="/cssMemeSlider/meme4.jpeg" alt="" class="img">
+           </div>
+        </div>
+        <div class="navigation">
+            <label for="meme1" class="button"></label>
+            <label for="meme2" class="button"></label>
+            <label for="meme3" class="button"></label>
+            <label for="meme4" class="button"></label>
+         </div>
+     </div>
 </body>
 </html>
