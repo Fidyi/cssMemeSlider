@@ -8,7 +8,9 @@
     margin: auto;
  }
  .navigation {
+    position: absolute;
     display: flex;
+    left: 70%;
  }
  
  .button {
@@ -16,9 +18,18 @@
     height: 3vh;
     margin: 2vh;
     background-color: black;
+    transition: transform 0.3s, background-color 0.1s;
+    border-radius: 50%;
  }
  
- 
+ .button:hover {
+    background-color: red;
+    transform: scale(1.2);
+ } 
+
+ .button:active {
+    background-color: yellow;
+ }
  input[name="meme"] {
     position: absolute;
     visibility: hidden;
@@ -43,15 +54,12 @@
  #meme1:checked ~ .first_slide {
     margin-left: 0;
  }
- 
  #meme2:checked ~ .first_slide {
     margin-left: -25%;
  }
- 
  #meme3:checked ~ .first_slide {
     margin-left: -50%;
  }
- 
  #meme4:checked ~ .first_slide {
     margin-left: -75%;
  }
